@@ -7,11 +7,21 @@ def lineareSuche(w, L) {
   return false
 }
 // test1
-w1 = 1
-L1 = [2, 4, 5, 6]
-println(lineareSuche(w1, L1))
+// w = 4
+// L2 = [] // empty list raises missingPropertyException
+// println(lineareSuche(w, L))
 
 // test2
-w2 = 2
-L2 = [2, 4, 5, 6]
-println(lineareSuche(w2, L2))
+w = 44
+L = [2]
+println(lineareSuche(w, L))
+
+// test3
+w = 44
+L = [44]
+println(lineareSuche(w, L))
+
+// test4
+w = 44
+L = [2, 3, 4, 5, 44, 9, 44, 5, 33, 44]
+println(lineareSuche(w, L))
